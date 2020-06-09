@@ -67,9 +67,18 @@ item.addEventListener('click', function (event) {
  });
 });
 
+//press key down to see this event:
+
+
+window.addEventListener("keydown", function keyFunc() {
+ alert('key down pressed!')
+})
+
+//beforeunload event to make sure user wants to leave or stay
 
 
 
-
-
+window.addEventListener("beforeunload", function(event) {
+   event.returnValue = "Click leave to make sure";
+ });
 
